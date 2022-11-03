@@ -1,0 +1,125 @@
+header{
+    height: 70px;
+    background: rgb(152,122,111);
+background: linear-gradient(90deg, rgba(152,122,111,1) 1%, rgba(152,111,140,1) 24%, rgba(140,116,148,1) 40%, rgba(59,150,204,1) 72%, rgba(59,184,204,1) 90%);
+}
+
+.box{
+    border-radius: 6px;
+    height: 60px;
+    width: 100px;
+    margin: 60px auto;
+}
+
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: cornflowerblue;
+}
+
+.box:hover{
+    transform: scale(5);
+}
+
+.box2{
+    transition-property: all;
+    transition-duration: 4s;
+}
+
+.circle1, .circle2, .circle3, .circle4,
+.circle5{
+    border-radius: 50% ;
+    height:50px ;
+    width: 50px;
+    margin: 15px;
+}
+
+.circle1{
+    background-color: cadetblue;
+    transition: all 3s ease;
+}
+.circle2{
+    background-color:coral ;
+    transition: all 3s ease-in;
+}
+.circle3{
+    background-color: darkblue;
+    transition: all 3s ease-in-out;
+}
+.circle4{
+    background-color: crimson;
+    transition: all 3s ease-out;
+}
+.circle5{
+    background-color: darkorange;
+    transition: all 3s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(300px);
+}
+
+
+.square1, .square2{
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+    margin:100px;
+    position: absolute;
+}
+
+.square1{
+    background-color: teal;
+}
+.square2{
+    background-color: slateblue;
+    transition: all 1.5s;
+}
+
+.square2:hover{
+    transform: translate(30px, 30px);
+}
+
+.combinado{
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 2s;
+}
+
+.combinado:hover{
+    transform: rotate(-360deg) scale(3);
+}
+
+.animaciones{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+.animaciones:hover{
+    animation: cambiar-color 4s;
+}
+
+@keyframes cambiar-color{
+    1%{
+        background-color: cornflowerblue;
+    }
+    25%{
+        border-radius: 50%;
+    }
+
+    75%{
+        transform: rotate(360deg);
+    }
+
+
+}
